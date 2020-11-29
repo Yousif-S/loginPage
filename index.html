@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>login page</title>
+        <meta charset="UTF-8">
+        
+        <script>
+            function login()
+            {
+              var user = document.login.username.value;  
+              var pass = document.login.pass.value; 
+              
+              var valid=true;
+              
+              if(user=== "")
+              {
+                  valid=false;
+                  euser.style.visibility = "visible";
+              }
+              else
+              {
+                 euser.style.visibility = "hidden";
+              }
+              
+              
+              if( pass === "")
+              {
+                  valid=false;
+                  epass.style.visibility = "visible";
+              }
+              else
+              {
+                 epass.style.visibility = "hidden";
+              }
+              
+              
+              if(valid)
+              {
+                 return true;
+              }
+              else
+              {
+                  return false;
+              }
+              
+              
+            }
+      
+        </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <style>
+            body{
+                 background:  url(https://i.pinimg.com/originals/ec/80/d3/ec80d334bf8782c67d446e554cb138c6.jpg);
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         margin: center;
+          background-size: cover;
+             
+            }
+            .form-container{
+                
+                border-radius: 15px;
+                background-color: darkslategray;
+               
+                padding: 60px;
+                padding-right: 0px;
+                padding-top: 100px;
+               
+               margin: 0 auto;
+               margin-top: 120px;
+                color: wheat;
+                
+            }
+            .btn1{
+              
+                border-radius: 15px;
+                    padding-bottom: 20px;
+                    padding-left: 80px;
+                    padding-right: 100px;
+                    margin-top: 80px;
+                    margin-left: 80px;
+                    margin-right: 150px;
+                    margin: center;
+                    font-size: 20px;
+            }
+            input{
+                margin-left: 80px;
+            }
+            p{
+               margin-left: 80px; 
+            }
+            h1{
+                margin-bottom:80px;
+                margin-left: 150px; 
+                color: wheat;
+                font-family: sans-serif;
+                font-size: 45px;
+            }
+            h5{
+                margin-left: 50px; 
+            }
+            .divFooter{
+        
+      display: grid;
+      font-family:  fantasy;
+      font-size: 25px;
+      color: whitesmoke;
+                grid-gap: 15px;
+                grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+                padding-top: 10px;
+                margin-left: 0px;
+              
+                margin-right: 0px;
+                margin-top: 450px;
+                background-image: url(https://i.ibb.co/Lx8w1CS/unnamed.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+
+    }
+    .navbar{
+        background-image: url(https://i.ibb.co/Lx8w1CS/unnamed.jpg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               margin: 0 auto;
+    }
+    
+    .navbar-nav{
+        font-size: 20px;
+       font-weight: bold;
+        margin: 0 auto;
+    }
+    
+    
+    .nav-link{
+         margin-left: 50px;
+        
+    }
+    .light{
+        background-color: wheat;
+    }
+     .line{
+        margin-top: 1px;
+        margin-left: 50px;
+        background-color: #cccccc;
+    }
+    .img-fluid{
+     width: 2600px;
+     height: 250px;
+     
+    }
+        </style>
+    
+      </head>
+       <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+
+  <a class="navbar-brand" href="#"><img src="https://i.ibb.co/XJS6X0z/cc55ff13-70bf-4ad9-a9d3-1d950d03300c-200x200.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+         <hr class="line">
+        
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Login</a>
+      <hr class="line">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign Up</a>
+        <hr class="line">
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+         <hr class="line">
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="https://cdn.mos.cms.futurecdn.net" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+    </ul>
+<form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+        
+           <form class="form-inline" id="form" name="login" onsubmit=" return login();">
+               <div class="form-container">
+                   <h1>Login</h1>
+               <div class="row"> 
+                   <div class="col-2">
+   <div class="form-group mx-sm-1 mb-2">
+       
+    <label for="inputUsername" class="sr-only">Username</label>
+    <input type="text" class="form-control"  placeholder="Username">
+    
+  </div>
+               
+  <div class="form-group mx-sm-1 mb-2">
+    <label for="inputPassword2" class="sr-only">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    
+    </div>
+                       
+  </div>
+          </div>
+                   <p>Forget Password?</p>
+                   <button type="submit" class="btn1 btn-primary">Submit</button>
+                   <br><br><br>
+                   <h5>© All Copyright Computech.com 2020</h5>
+               </div>
+                
+          </form>
+           <footer>
+    <div class="divFooter">
+  
+<div class="container-fluid padding">
+    <div class="row text-end">
+        
+          
+        <div class="col-md-4 col-lg-4">
+        
+            
+            <hr class="light">
+              <p>Our Location</p>
+            <hr class="light">
+           
+            <p>13b street</p>
+            <p>city,state, 00000</p> 
+        </div>
+
+            <div class="col-md-4 col-lg-4">
+                <hr class="light">
+                <p>Our Hours</p>
+                <hr class="light">
+            <p>Sunday; 9:00 A.M - 6 P.M</p>
+            <p>Tuesday: 9:00 P.M - 6 P.M</p>
+            <p>Sunday: close</p>
+            
+    </div>
+   <div class="col-md-4 col-lg-4">
+
+                <hr class="light">
+                <p>Contact Us</p>
+                
+            <p>000-000-0000</p>
+            <p>email@Computech.com</p>
+            <img src="https://i.ibb.co/Bfn5bYR/58e9196deb97430e819064f6.png" alt="" height="50px" width="50px"/>
+             <img src="https://i.ibb.co/TcCz4hM/1024px-Instagram-icon.png" alt="" height="50px" width="50px"/>
+             <img src="https://i.ibb.co/9ZpbgYR/snapchat-logo-F20-CDB1199-seeklogo-com.png" alt="" height="50px" width="50px"/>
+         
+            <div class="col-md-12 align-self-center">
+                <br> <br>
+                <hr class="light">
+        <h5>© All copyright Computech.com 2020</h5>
+        </div>
+    </div>
+</div>
+    </div>
+    </div>
+</footer>
+
+           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    </body>
+</html>

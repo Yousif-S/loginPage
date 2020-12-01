@@ -7,25 +7,32 @@ function login_valid()
   if(User === "")
   {
       valid=false;
-      euser.style.visibility = "visible"; 
+      euser.style.visibility = "visible";
+     inputPassword2.style.border ="1px solid red";
   }
   else
   {
-     euser.style.visibility = "hidden"; 
+     euser.style.visibility = "hidden";
+     Username.style.border ="1px solid green";
   }
+  
   
     if(Pass === "")
   {
       valid=false;
-      epass.style.visibility = "visible"; 
+      epass.style.visibility = "visible";
+      Username.style.border ="1px solid red";
   }
   else
   {
-     epass.style.visibility = "hidden"; 
+     epass.style.visibility = "hidden";
+  
   }
   
   if(valid)
   {
+      Username.style.border ="1px solid green";
+      inputPassword2.style.border ="1px solid green";
       return true;
   }
   else

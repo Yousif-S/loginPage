@@ -1,6 +1,6 @@
 
               
-               function login()
+               function login_valid()
             {
                    var name = document.login.Username.value;
                     var pass = document.login.Password.value; 

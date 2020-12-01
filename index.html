@@ -59,18 +59,20 @@
   </form>
 </nav>
         
-           <form class="form-inline" id="form" name="login" onsubmit=" return login();">
+           <form class="form-inline" id="form" name="login" onsubmit=" return login_valid();">
                <div class="form-container">
                    <h1>Login</h1>
                <div class="row"> 
                    <div class="col-2">
    <div class="form-group mx-sm-1 mb-2">
-       
+       <span  class="Error" id="euser">Please Enter the Username</span><br>
     <label for="inputUsername" class="sr-only">Username</label>
     <input type="text" class="form-control"  placeholder="Username">
     
   </div>
-               
+               <br><br>
+            <span  class="Error" id="epass" >Please Enter the Password</span>
+               <br>
   <div class="form-group mx-sm-1 mb-2">
     <label for="inputPassword2" class="sr-only">Password</label>
     <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
